@@ -69,8 +69,8 @@ namespace _01_Rectangle
 
             Rectangle rectangle = new Rectangle(side1, side2);
 
-            Console.WriteLine($"Площадь равна {rectangle.Area}\n" +
-                              $"Периметр равен {rectangle.Perimeter}");
+            Console.WriteLine($"Площадь равна {rectangle.AreaCalculator(side1, side2)}\n" +
+                              $"Периметр равен {rectangle.PerimeterCalculator(side1, side2)}");
         }
     }
 }
