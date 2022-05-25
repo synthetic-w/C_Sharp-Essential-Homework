@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _01_Rectangle.Models;
+using System;
 
 namespace _01_Rectangle
 {
@@ -19,42 +20,6 @@ namespace _01_Rectangle
 на экран периметр и площадь.
 */
 
-    internal class Rectangle
-    {
-        // Поля - значения сторон
-        public double side1;
-        public double side2;
-
-        //Пользовательский конструктор, инициализирующийся значениями аргументов
-        public Rectangle(double side1, double side2)
-        {
-            this.side1 = side1;
-            this.side2 = side2;
-        }
-
-        // Метод вычисления площади прямоугольника
-        public double AreaCalculator(double side1, double side2)
-        {
-            return side1 * side2;
-        }
-
-        //Метод вычисления периметра прямоугольника
-        public double PerimeterCalculator(double side1, double side2)
-        {
-            return (side1 + side2) * 2;
-        }
-
-        public double Area
-        {
-            get { return side1 * side2; }
-        }
-
-        public double Perimeter
-        {
-            get { return (side1 + side2) * 2; }
-        }
-    }
-
     internal class Program
     {
         private static void Main(string[] args)
@@ -69,8 +34,8 @@ namespace _01_Rectangle
 
             Rectangle rectangle = new Rectangle(side1, side2);
 
-            Console.WriteLine($"Площадь равна {rectangle.AreaCalculator(side1, side2)}\n" +
-                              $"Периметр равен {rectangle.PerimeterCalculator(side1, side2)}");
+            Console.WriteLine($"Площадь равна {rectangle.Area}\n" +
+                              $"Периметр равен {rectangle.Perimeter}");
         }
     }
 }
