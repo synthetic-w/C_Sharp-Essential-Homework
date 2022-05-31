@@ -33,6 +33,7 @@ switch (int.Parse(Console.ReadLine()))
 Console.WriteLine("Выполнено");
 Console.ReadKey();
 
+// Метод конвертации в гривны из другой валюты
 void ConvertTo(Converter currencyConverter)
 {
     Console.WriteLine("Нвжмите:");
@@ -62,6 +63,7 @@ void ConvertTo(Converter currencyConverter)
     }
 }
 
+// Метод конвертации из гривны в другую валюту
 void ConvertFrom(Converter currencyConverter)
 {
     Console.WriteLine("Нажмите:");
