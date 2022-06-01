@@ -40,19 +40,19 @@
 
             switch (experience)
             {
-                case 1:
+                case <= 1:
                     experienceSalaryMultiplier = 1;
                     break;
 
-                case 2:
+                case <= 2:
                     experienceSalaryMultiplier = 1.2;
                     break;
 
-                case 3:
+                case <= 5:
                     experienceSalaryMultiplier = 1.4;
                     break;
 
-                case 4:
+                case > 10:
                     this.experienceSalaryMultiplier = 1.6;
                     break;
             }

@@ -55,11 +55,7 @@ switch (position)
         break;
 }
 
-Console.WriteLine("Укажите стаж сотрудника:\n" +
-                  "1. До 1 года\n" +
-                  "2. От 1 до 2 лет\n" +
-                  "3. От 2 до 4 лет\n" +
-                  "4. От 4 до 6 лет");
+Console.WriteLine("Укажите стаж сотрудника, полных лет:");
 
 int experience = int.Parse(Console.ReadLine());
 
