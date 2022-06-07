@@ -1,24 +1,47 @@
-﻿namespace _03_Invoice.Models
+﻿/*
+Создать класс Invoice.
+В теле класса создать три поля int account, string customer, string provider, которые должны
+быть проинициализированы один раз (при создании экземпляра данного класса) без возможности их
+дальнейшего изменения.
+В теле класса создать два закрытых поля string article, int quantity.
+Создать метод расчета стоимости заказа с НДС и без НДС.
+*/
+
+namespace _03_Invoice.Models
 {
     internal class Invoice
     {
+        // Поля, инициализируемые один раз (при создании экземпляра данного класса)
         private readonly int account;
         private readonly string customer;
         private readonly string provider;
 
+        // Закрытые поля
         private string article;
         private int quantity;
 
         public string Article
         {
-            get => article;
-            set => article = value;
+            get
+            {
+                return article;
+            }
+            set
+            {
+                article = value;
+            }
         }
 
         public int Quantity
         {
-            get => quantity;
-            set => quantity = value;
+            get
+            {
+                return quantity;
+            }
+            set
+            {
+                quantity = value;
+            }
         }
 
         public Invoice(int account, string customer, string provider)
